@@ -4,12 +4,12 @@ require './lib/bookmarks'
 class BookmarkManager < Sinatra::Base
 
   get '/' do
-    "Bookmark Manager"
+    erb :index
   end
 
-  get '/bookmarks' do
-    @book = Bookmarks.new.list
-    erb :bookmarks
+  get '/all' do
+    @book = Bookmarks.new.all
+    erb :all
   end
 
   run! if $0 == __FILE__

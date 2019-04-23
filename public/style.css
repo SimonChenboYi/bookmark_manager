@@ -1,0 +1,18 @@
+body {
+  background-color:beige;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: aquamarine;
+  text-align: center;
+  color:orange;
+}
+
+ul.bookmarklist {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  font-size: large;
+}

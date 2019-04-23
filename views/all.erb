@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+</head>
+
+<body>
+
+  <ul class="bookmarklist">
+  <%@book.each do |x|%>
+   <li><%= x %></li>
+  <% end %>
+  </ul>
+
+</body>
+
+</html>

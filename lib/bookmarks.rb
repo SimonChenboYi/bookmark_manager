@@ -1,6 +1,6 @@
 class Bookmarks
 
-  def list
+  def all
     ['www.google.com', 'www.youtube.com', 'www.instagram.com']
   end
 end
