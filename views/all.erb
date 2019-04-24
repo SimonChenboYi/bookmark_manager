@@ -6,11 +6,10 @@
 </head>
 
 <body>
-
-  <ul class="bookmarklist">
-  <%@book.each do |x|%>
-   <li><%= x %></li>
-  <% end %>
+  <ul>
+    <% @list.each do |x| %>
+     <li><%= x %></li>
+    <% end %>
   </ul>
 
 </body>

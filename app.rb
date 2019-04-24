@@ -7,9 +7,18 @@ class BookmarkManager < Sinatra::Base
     erb :index
   end
 
-  get '/all' do
-    @book = Bookmarks.all
+  get '/bookmarks' do
+    @list = Bookmarks.all
     erb :all
+  end
+
+  get '/bookmarks/new' do
+    erb :"bookmarks/new"
+  end
+
+  post '/bookmarks' do
+    Bookmarks.add(params[:add_bookmark])
+    redirect '/bookmarks'
   end
 
   run! if $0 == __FILE__
